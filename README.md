@@ -3,6 +3,18 @@ docker-node
 
 Docker base image with Node.js and Yarn.
 
+Usage
+-----
+
+```Dockerfile
+FROM gnkt/node:latest
+
+WORKDIR /opt/app
+
+COPY . .
+yarn install --pure-lockfile
+```
+
 Versions
 --------
 
